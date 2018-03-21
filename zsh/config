@@ -33,7 +33,7 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 # set default editor
 export EDITOR="atom"
-export GIT_EDITOR="subl -w"
+export GIT_EDITOR="atom"
 
 # global packer cache
 export PACKER_CACHE_DIR="$HOME/packer_cache"
@@ -56,3 +56,29 @@ if [ -f '/Users/bevacqua/dev/google-cloud-sdk/path.zsh.inc' ]; then source '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/bevacqua/dev/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/bevacqua/dev/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
+
+##
+# Your previous /Users/lovelike-sky/.profile file was backed up as /Users/lovelike-sky/.profile.macports-saved_2013-02-13_at_16:38:39
+##
+
+# MacPorts Installer addition on 2013-02-13_at_16:38:39: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+alias ssh_gate='ssh -t -i ~/.ssh/id_daumgate daumgate@daumgate.daumcorp.com'
+alias ssh_gate_gmc='ssh -t -i ~/.ssh/id_rsa_gmc daumgate@daumgate.daumcorp.com'
+alias ssh_gate_seoul='ssh -t -i ~/.ssh/id_seoul daumgate@daumgate.daumcorp.com'
+alias ssh_master='ssh hanadmin@10.15.75.26'
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export M3_HOME=/Users/lovelike-sky/maven
+export M3=$M3_HOME/bin
+export PATH=$PATH:$M3
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+export JAVA_HOME="`/usr/libexec/java_home`"
+alias krane_sagan='ssh deploy@1boon-sagan.s2.karne.9rum.cc'
+
+# MacPorts Installer addition on 2016-12-15_at_23:04:30: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
